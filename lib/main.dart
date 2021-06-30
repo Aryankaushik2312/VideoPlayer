@@ -33,8 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
     _videoPlayerController = VideoPlayerController.network(
         'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4');
     _initializeVideoPlayerFuture = _videoPlayerController.initialize();
-
-    _videoPlayerController.setLooping(true);
+    _videoPlayerController.setLooping(false);
   }
 
   @override
